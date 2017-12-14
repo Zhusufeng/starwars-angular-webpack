@@ -1,0 +1,11 @@
+{
+  "name": "starwars-angular-webpack",
+  "version": "1.0.0",
+  "description": "Tutorial for AngularJS and Webpack using SWAPI",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "Lisa Gee",
+  "license": "ISC"
+}
