@@ -1,1 +1,1 @@
-angular.module('starwars', [])
+angular.module('starwars', [uirouter])
