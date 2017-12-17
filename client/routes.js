@@ -5,7 +5,7 @@ angular.module('starwars')
       .state('home', {
         url: '/',
         template: '<character-list></character-list>'
-      })
+      });
   
     $urlRouterProvider.otherwise('/');
   })
