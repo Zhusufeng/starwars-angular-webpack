@@ -1,1 +1,1 @@
-angular.module('starwars', [uirouter])
+angular.module('starwars', ['ui.router'])
