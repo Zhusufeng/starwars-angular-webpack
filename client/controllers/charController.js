@@ -1,4 +1,4 @@
-angular.module('index')
+angular.module('starwars')
   .controller('charController', function() {
 
   });
