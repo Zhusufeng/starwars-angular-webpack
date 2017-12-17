@@ -3,9 +3,16 @@
   <head>
     <meta charset="UTF-8">
     <title>Star Wars Characters</title>
+    <script src="node_modules/angular/angular.js"></script>
+    <script src="node_modules/angular-ui-router/release/angular-ui-router.js"></script>
   </head>
-  <body>
+  <body ng-app="starwars">
     <div ui-view></div>
     <script src="client/app.js"></script>
+    <script src="client/routes.js"></script>
+    <script src="client/controllers/charController.js"></script>
+    <script src="client/components/character-list.js"></script>
+    
+
   </body>
 </html>
