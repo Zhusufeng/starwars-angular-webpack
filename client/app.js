@@ -1,6 +1,6 @@
 const angular = require('angular');
 const uirouter = require('angular-ui-router');
-require('./routes');
+const routes = require('./routes');
 require('./components');
 require('./controllers');
 require('./services');
