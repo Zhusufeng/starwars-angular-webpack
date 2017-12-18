@@ -1,5 +1,8 @@
-routes.$inject = ['$stateProvider', '$urlRouterProvider']
-export default function routes ($stateProvider, $urlRouterProvider) {
+'use strict';
+
+routes.$inject = ['$stateProvider', '$urlRouterProvider'];
+
+function routes ($stateProvider, $urlRouterProvider) {
   $stateProvider
     .state('home', {
       url: '/',
@@ -8,3 +11,5 @@ export default function routes ($stateProvider, $urlRouterProvider) {
 
   $urlRouterProvider.otherwise('/');
 }
+
+module.exports = routes;
