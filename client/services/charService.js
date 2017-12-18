@@ -1,6 +1,9 @@
-angular.module('starwars').service('charService', function($http) {
-  this.getCharacters = () => {
+export default class charService {
+  constructor($http) {
+    this.$http = $http
+  }
+  getCharacters() {
     console.log('charService is running...');
     return $http.get('https://swapi.co/api/people');
   }
-})
+}
