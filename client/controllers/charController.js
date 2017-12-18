@@ -1,5 +1,8 @@
+'use strict';
+
 charController.$inject = ['charService'];
-export default function charController (charService) {
+
+function charController(charService) {
   this.characters = [];
   
   charService.getCharacters()
@@ -8,3 +11,5 @@ export default function charController (charService) {
       this.characters = res.data.results;
     });
 }
+
+module.exports = charController;
