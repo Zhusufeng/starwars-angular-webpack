@@ -1,4 +1,8 @@
 angular.module('starwars').controller('charController', function (charService) {
   this.characters = [];
-  this.characters = charService.getCharacters();
+  charService.getCharacters()
+    .then(res => {
+      console.log('You received these results from charService', res.data.results)
+      this.characters = res.data.results;
+    });
 });
