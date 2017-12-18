@@ -1,5 +1,11 @@
 angular.module('starwars').service('charService', ($http) => {
   this.getCharacters = () => {
-    return $http.get('https://swapi.co/api/people');
+    console.log('this started the service');
+    $http.get('https://swapi.co/api/people')
+      .then((data) => {
+        console.log('hey hey');
+
+        console.log(data);
+      });
   }
 })
