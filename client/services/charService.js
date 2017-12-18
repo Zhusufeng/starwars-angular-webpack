@@ -1,4 +1,4 @@
-angular.module('starwars').service('charService', ($http) => {
+angular.module('starwars').service('charService', function($http) {
   this.getCharacters = () => {
     console.log('this started the service');
     $http.get('https://swapi.co/api/people')
